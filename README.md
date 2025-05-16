@@ -64,9 +64,9 @@ docker run --rm   -v < seu path >:/app/diario_de_bordo/results   -e SCRIPT_TO_RU
 ### 4. Executar os testes com **Pytest**
 
 ```bash
-docker run --rm   -v < seu path >:/app/diario_de_bordo/results   -e SCRIPT_TO_RUN=diario_de_bordo/tests/test_logbook_pyspark.py   -e RUN_COMMAND=pytest   logbook-spark
+docker run --rm -e SCRIPT_TO_RUN=diario_de_bordo/tests/test_logbook_pyspark.py   -e RUN_COMMAND=pytest   logbook-spark
 
-docker run --rm   -v < seu path >:/app/diario_de_bordo/results   -e SCRIPT_TO_RUN=diario_de_bordo/tests/test_logbook_pd.py   -e RUN_COMMAND=pytest   logbook-spark
+docker run --rm -e SCRIPT_TO_RUN=diario_de_bordo/tests/test_logbook_pd.py   -e RUN_COMMAND=pytest   logbook-spark
 ```
 
 ## ✅ Testes
